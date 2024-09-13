@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px;
+    padding: 12px;
+
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* nav .logo img {
+    width: 40px;
+    height: 40px;
+} */
+
+nav .logo a{
+    color: #000;
+    font-weight: 600;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 45px;
+}
+
+nav .nav-links a{
+    font-size: 16px;
+    color: #606060;
+    transition: all 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #dedede;
+    
+}
+
+nav button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-size: 14px;
+    height: 32px;
+    width: 122px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav button:hover,
+.hero .left-section .top .buttons button.doc:hover, .contact .items .item button:hover {
+    color: #000;
+    background: #fff;
+    border-color: #dedede;
+}
+
+nav button i {
+    font-size: 20px;
+}
+
+.hero {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero > img {
+    max-width: 1040px;
+    width: 50%;
+    border-radius: 26px;
+}
+
+.hero .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.hero .left-section .top h2 {
+    font-size: 44px;
+    margin-bottom: 24px;
+
+}
+
+.hero .left-section .top p {
+    color: #606060;
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.hero .left-section .top .buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.hero .left-section .top .buttons button, .works .inner > button, .contact .items .item button {
+    font-size: 16px;
+    border: none;
+    padding: 5px 20px;
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+}
+
+.hero .left-section .top .buttons button i {
+    font-size: 26px;
+}
+.hero .left-section .top .buttons button.doc, .contact .items .item button {
+    background: #000;
+    color: #fff;
+}
+
+.hero .left-section .top .buttons button.git:hover {
+    background: #000;
+    color: #fff;
+    border-color: transparent;
+}
+
+.hero .left-section .bottom p {
+    font-size: 18px;
+    color: #606060;
+    margin-bottom: 15px;
+    margin-top: -30px;
+}
+
+.hero .left-section .bottom .icons {
+    /* margin-left: ; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.hero .left-section .bottom .icons a {
+    color: #000;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #f5f5f5;
+    padding: 50px;
+
+}
+
+.about > p {
+    font-size: 18px;
+    color: #000;
+    border: 1px solid #dedede;
+    padding: 6px 14px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    /* background: #a1a1a1; */
+}
+
+.about > h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about .items {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.about .items .item {
+    width: 26%;
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    background: #f1f1f1;
+    padding: 0 0 30px;
+}
+
+.about .items .item .inner {
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #e8e8e8;
+    min-height: 365px;
+}
+
+.about .items .item .inner img {
+    width: 100%;
+    height: 194px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+}
+
+.about .items .item:nth-child(1) .inner img {
+    margin-bottom: 18px;
+}
+
+/* .about .items .item:nth-child(3) .inner img {
+    height: 194px;
+} */
+
+.about .items .item .inner a {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.about .items .item .inner p {
+    color: #606060;
+    font-size: 15px;
+}
+
+.works {
+    padding: 0 24px;
+    background: #f5f5f5;
+}
+
+.works .inner {
+    background-color: #000;
+    color: #fff;
+    padding: 70px;
+    border-radius: 24px;
+}
+
+.works .inner p.debug {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #d8d8d8;
+    border: 1px solid #484848;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.works .inner p.debug i, .works .inner > button i {
+    font-size:  18px;
+}
+
+.works .inner > h2 {
+    font-size: 34px;
+    margin-bottom: 24px;
+}
+
+.works .inner p.info {
+    font-size: 18px;
+    color:  #dedede;
+    margin-bottom: 24px;
+}
+
+.works .inner > button {
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    
+}
+
+.works .inner > button i {
+    margin-top: 8px;
+    
+}
+
+.works .inner .items {
+    display: flex;
+    gap: 20px;
+}
+
+.works .inner .items .item {
+    border: 1px solid #484848;
+    border-radius: 16px;
+    padding: 32px 24px;
+    height: 260px;
+    width: 33%;
+    background: #262626;
+}
+
+.works .inner .items .item i {
+    font-size: 34px;
+    border: 1px solid #606060;
+    border-radius: 10px;
+    padding: 10px;
+    background: #303030;
+}
+
+.works .inner .items .item a {
+    display: block;
+    margin: 24px 0 14px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.works .inner .items .item p {
+    color: #a1a1a1;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact {
+    padding: 100px 60px;
+    background: #f5f5f5;
+}
+
+.contact > h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.contact .items {
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.contact .items .item {
+    width: 50%;
+    padding: 30px;
+    border: 1px solid #dedede;
+}
+
+.contact .items .item:nth-child(1) {
+    border-radius: 12px 0 0 12px;
+}
+.contact .items .item:nth-child(2) {
+    border-radius: 0 12px 12px 0;
+}
+
+.contact .items .item a {
+    font-size: 24px;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.contact .items .item p {
+    font-size: 20px;
+    color: #606060;
+    margin-bottom: 26px;
+}
+
+.contact .items .item button {
+    padding: 10px 24px;
+}
+
+footer {
+    background: #1f1f1f;
+    border-radius: 24px 24px 0 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer p, footer a {
+    font-size: 13px;
+    color: #606060;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 1776px) {
+    .contact .items .item:nth-child(1) button {
+        margin-top: 44px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    nav .nav-links{
+        gap: 24px;
+    }
+
+    nav .nav-links a {
+        font-size: 14px;
+    }
+    .hero > img {
+        width: 55%;
+    }
+    .hero .left-section .top h2 {
+        font-size: 25px;
+    }
+
+    .hero .left-section .top p {
+        font-size: 14px;
+    }
+
+    .hero .left-section .top .buttons button, .works .inner > button, .contact .items .item button {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .hero .left-section .top .buttons button i {
+        font-size: 18px;
+    }
+
+    .hero .left-section .bottom p {
+        font-size: 14px;
+    }
+    
+    .hero .left-section .bottom .icons {
+        gap: 10px;
+        font-size: 20px;
+    }
+
+
+
+    .about > h2 {
+        font-size: 14px;
+    }
+
+    .about .items .item .inner {
+        min-height: 340px;
+    }
+
+    .about .items .item .inner img {
+        height: 166px;
+    }
+
+    /* .about .items .item:nth-child(1) .inner img {
+        height: ;
+    } */
+
+    .about .items .item .inner a, .works .inner > p.info, .contact .items .item p {
+        font-size: 15px;
+    }
+
+    .about .items .item .inner p {
+        font-size: 13px;
+    }
+
+
+    .works .inner .items .item {
+        width: 49%;
+        height: 270px;
+    }
+
+
+    .contact .items .item a {
+        font-size: 18px;
+    }
+
+    .contact .items .item:nth-child(1) button {
+        margin-top: 42.5px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .about .items .item .inner img {
+        height: 130px;
+    }
+} 
+
+@media screen and (max-width: 1150px) {
+    .works .inner .items .item {
+        height: 310px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .hero {
+        margin-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 1280px);
+    }
+
+    .hero > img {
+        width: 78%;
+    }
+
+    .hero .left-section {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hero .left-section .top {
+        text-align: center;
+    }
+
+    .hero .left-section .top .buttons {
+        justify-content: center;
+    }
+
+    .hero .left-section .bottom p {
+        margin-top: 0px;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .hero .left-section .bottom .icons {
+        gap: 30px;
+        font-size: 20px;
+        
+    }
+
+    .about .items .item .inner img {
+        height: auto;
+    }
+
+    .about .items .item:nth-child(1) .inner img {
+        margin-bottom: 48px;
+    }
+
+    .about .items {
+        flex-wrap: wrap;
+    }
+
+    .about .items .item {
+        width: 40%;
+    }
+
+    .works .inner > h2 {
+        font-size: 32px;
+    }
+
+    .works .inner .items {
+        flex-wrap: wrap;
+    }
+
+    .works .inner .items .item {
+        height: 250px;
+    }
+
+    .works .inner .items .item i {
+        font-size: 30px;
+    }
+    .contact > h2 {
+        font-size: 32px;
+    }
+    .contact .items .item button {
+        width: 100%;
+    }
+
+    .contact .items .item:nth-child(1) button {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 977px) {
+    .contact .items .item:nth-child(2) button {
+        margin-top: 42.5px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about .items .item:nth-child(1) .inner img {
+        margin-bottom: 44px;
+    }
+
+    .contact .items .item:nth-child(1) button {
+        margin-top: 42.5px;
+    }
+
+    .contact .items .item:nth-child(2) button {
+        margin-top: 0px;
+    }
+
+    .works .inner .items .item {
+        height: 285px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav, nav .nav-links {
+        gap: 16px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .hero {
+        padding: 0 40px;
+        height: calc(100vh - 100px);;
+    }
+
+    .hero > img {
+        width: 78%;
+    }
+
+    .hero .left-section .bottom p {
+        font-size: 14px;
+    }
+    
+    .hero .left-section .bottom .icons {
+        gap: 30px;
+        font-size: 20px;
+    }
+
+    .about > p {
+        font-size: 16px;
+    }
+
+    .about > h2 {
+        font-size: 14px;
+    }
+
+    .about .items .item {
+        width: 80%;
+    }
+
+    .about .items .item .inner img {
+        height: 65%;
+        max-height: 350px;
+    }
+
+    .works .inner {
+        padding: 50px 40px;    
+    }
+
+    .works .inner > h2 {
+        font-size: 24px;
+    }
+
+    .works .inner p.info {
+        font-size: 13px;
+    }
+
+    .works .inner button {
+        width: 100%;
+    }
+
+    .works .inner .items .item {
+        width: 100%;
+        height: 185px;
+    }
+
+    .works .inner .items .item i {
+        font-size: 28px;
+    }
+
+    .works .inner .items .item a {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .works .inner .items .item p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .contact {
+        padding: 100px 40px;
+    }
+
+    .contact > h2 {
+        font-size: 22px;
+    }
+
+    .contact .items {
+        flex-wrap: wrap;
+    }
+
+    .contact .items .item {
+        width: 100%;
+    }
+
+    .contact .items .item:nth-child(1) {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .contact .items .item:nth-child(2) {
+        border-radius: 0 0 12px 12px;
+    }
+
+    footer a, footer p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .works .inner .items .item {
+        height: 300px;
+    }
+}
