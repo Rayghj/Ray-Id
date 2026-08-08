@@ -243,7 +243,7 @@ class HeroSection extends HTMLElement {
                     <div class="top">
                         <h2>Software Engineering Student from Universitas Pendidikan Indonesia</h2>
                         <p>
-                           My name is Ray Immanuel Darmawan, a Software Engineering student at Universitas Pendidikan Indonesia, class of 2025. I have a strong interest in information technology and experience as an IT Support, assisting with various computer-related issues. In addition, I am capable of developing custom websites tailored to specific requirements. I also have skills in creating character and building designs using Blender 3D, as well as developing simple games using Unity 3D.
+                           My name is Ray Immanuel Darmawan, a Software Engineering student at Universitas Pendidikan Indonesia. I have a strong interest in information technology and experience as an IT Support, assisting with various computer-related issues. In addition, I am capable of developing custom websites tailored to specific requirements. I also have skills in creating character and building designs using Blender 3D, as well as developing simple games using Unity 3D.
                         </p>
 
                         <div class="buttons">

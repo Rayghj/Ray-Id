@@ -7,3 +7,13 @@
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
 }
+
+body {
+    padding-left: 190px;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        padding-left: 0;
+    }
+}
